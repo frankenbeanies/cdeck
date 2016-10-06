@@ -46,10 +46,10 @@ cdeck::Card::getSuite()
 returns the Card's suite
 
 ```cpp
-Card c("Test", 0);
+cdeck::Card c("Test", 0);
 
 //returns "Test"
-string suite = c.getSuite();
+std::string suite = c.getSuite();
 ```
 
 cdeck::Card::getValue()
@@ -58,7 +58,7 @@ cdeck::Card::getValue()
 returns the Card's value
 
 ```cpp
-Card c("Test", 0);
+cdeck::Card c("Test", 0);
 
 //returns 0
 int value = c.getValue();

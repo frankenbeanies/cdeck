@@ -13,6 +13,7 @@ namespace cdeck{
 			void add(cdeck::Card c);
 			void burn(cdeck::Card c);
 			cdeck::Card draw();
+			int size();
 	};
 };
 

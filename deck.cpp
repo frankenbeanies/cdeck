@@ -17,3 +17,7 @@ cdeck::Card cdeck::Deck::draw(){
 	_deck.pop_back();
 	return c;
 }
+
+int cdeck::Deck::size(){
+	return _deck.size();
+}

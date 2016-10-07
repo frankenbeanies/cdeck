@@ -25,12 +25,21 @@ void testDeck(){
 		std::cout << "\033[0;31mburn test FAILED\033[0m" << std::endl;
 	}
 
-	//pop
+	//draw
 	if(d.size() == 1){
-		std::cout << "\033[0;32mpop test PASSED \033[0m" << std::endl;
+		std::cout << "\033[0;32mdraw test PASSED \033[0m" << std::endl;
 	}else{
-		std::cout << "\033[0;31mpop test FAILED \033[0m" << std::endl;
+		std::cout << "\033[0;31mdraw test FAILED \033[0m" << std::endl;
 	}
+
+	//peek
+	c = d.peek();
+	if(d.size() == 1 && c.getValue() == 2){
+		std::cout << "\033[0;32mpeek test PASSED \033[0m" << std::endl;
+	}else{
+		std::cout << "\033[0;31mpeek test FAILED \033[0m" << std::endl;
+	}
+
 }
 
 void testCard(){

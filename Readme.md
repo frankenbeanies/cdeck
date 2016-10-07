@@ -63,3 +63,60 @@ cdeck::Card c("Test", 0);
 //returns 0
 int value = c.getValue();
 ```
+
+cdeck::Deck
+===========
+
+cdeck Deck object. Default constructor only
+
+```cpp
+cdeck::Deck d;
+```
+
+cdeck::add(cdeck::Card)
+-----------------------
+
+Adds a card to the top of the stack
+
+```cpp
+cdeck::Deck d;
+cdeck::Card c("Test", 0);
+
+d.add(c);
+```
+
+cdeck::burn(cdeck::Card)
+------------------------
+
+Adds a card to the bottom of the stack
+
+```cpp
+d.burn(c);
+```
+
+cdeck::size()
+-------------
+
+Returns the current stack size
+
+```cpp
+int size = d.size();
+```
+
+cdeck::draw()
+------------
+
+Removes and returns the item at the top of the stack
+
+```cpp
+Card c1 = d.draw();
+```
+
+cdeck::peek()
+-------------
+
+Returns the card at the top of the stack without removing it
+
+```
+Card c2 = d.peek();
+```

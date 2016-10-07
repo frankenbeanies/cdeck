@@ -18,6 +18,10 @@ cdeck::Card cdeck::Deck::draw(){
 	return c;
 }
 
+cdeck::Card cdeck::Deck::peek(){
+		return _deck.back();
+	}
+
 int cdeck::Deck::size(){
 	return _deck.size();
 }

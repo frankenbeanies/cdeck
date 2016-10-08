@@ -27,6 +27,6 @@ void cdeck::Deck::shuffle(){
 	std::random_shuffle(_deck.begin(), _deck.end());	
 }
 
-int cdeck::Deck::size(){
+unsigned long cdeck::Deck::size(){
 	return _deck.size();
 }

@@ -100,7 +100,7 @@ cdeck::size()
 Returns the current stack size
 
 ```cpp
-int size = d.size();
+unsigned long size = d.size();
 ```
 
 cdeck::draw()

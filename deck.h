@@ -14,6 +14,7 @@ namespace cdeck{
 			void burn(cdeck::Card c);
 			cdeck::Card draw();
 			cdeck::Card peek();
+			void shuffle();
 			int size();
 	};
 };

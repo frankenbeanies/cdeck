@@ -1,4 +1,5 @@
 #include "deck.h"
+#include <algorithm>
 
 cdeck::Deck::Deck(){
  
@@ -19,8 +20,12 @@ cdeck::Card cdeck::Deck::draw(){
 }
 
 cdeck::Card cdeck::Deck::peek(){
-		return _deck.back();
-	}
+	return _deck.back();
+}
+
+void cdeck::Deck::shuffle(){
+	std::random_shuffle(_deck.begin(), _deck.end());	
+}
 
 int cdeck::Deck::size(){
 	return _deck.size();

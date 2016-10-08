@@ -117,6 +117,15 @@ cdeck::peek()
 
 Returns the card at the top of the stack without removing it
 
-```
+```cpp
 Card c2 = d.peek();
+```
+
+cdeck::shuffle()
+----------------
+
+Shuffles the deck
+
+```cpp
+d.shuffle();
 ```
